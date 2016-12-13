@@ -1,0 +1,59 @@
+{
+  "definitions": {
+    "Contract": {
+      "properties": {
+         "tariffs": {
+          "type":"array",
+          "title":"Tariffs",
+          "description":"The tariffs set out in the contract documents - or AS AMMENEDED FROM TIME TO TIME.",
+          "items": {
+            "$ref": "#/definitions/Tariff"
+          }
+        }
+      }
+    },
+    "Tariff":{
+        "type":"object",
+        "title":"Tariff",
+        "description":"An item in a tariff table, setting out a breakdown of the user or government fees payable in relation to each unit of a particular good or services.",
+        "properties":{
+            "id": {
+                "title":"Identifier",
+                "description":"A local identifier for this specific  tariff.",
+                "type":"string"
+            },
+            "period":{
+                "$ref": "#/definitions/Period"
+            },
+            "value": {
+                "$ref": "#/definitions/Value"
+            },
+            "unit":{
+                "type":["object","null"],
+                "title":"Unit",
+                "description":"Unit",
+                "properties": {
+                    "name": {
+                        "type":["string","null"],
+                        "title":"Unit name",
+                        "description":"The name of the unit that the tariff is charged against. E.g. tonnes,"       
+                    },
+                    "id": {
+                        "title":"See https://github.com/open-contracting/standard/issues/366 for information on the proposed unit extension to capture structured unit information"
+                    }
+                }
+            },
+            "dimensions":{
+                "type":"object",
+                "title":"Dimensions",
+                "description":"Used to capturing the different breakdowns in tariff charges"
+            },
+            "notes": {
+                "title":"Notes",
+                "description":"Any notes on this tariff line item. This may include clarifying information.",
+                "type":["string","null"]
+            }
+        }
+    }
+  }
+}
