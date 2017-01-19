@@ -22,6 +22,14 @@
                 "description":"A local identifier for this specific  tariff.",
                 "type":"string"
             },
+			"title": {
+				"title": "Title",
+				"description": "The title of this tariff.",
+				"type": [
+					"string",
+					"null"
+				]
+			},
             "period":{
                 "$ref": "#/definitions/Period"
             },
