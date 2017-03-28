@@ -1,11 +1,11 @@
 {
   "definitions": {
-    "Contract": {
+    "Implementation": {
       "properties": {
          "tariffs": {
           "type":"array",
           "title":"Tariffs",
-          "description":"The tariffs set out in the contract documents - or AS AMMENEDED FROM TIME TO TIME.",
+          "description":"The tariffs as set out in the contract schedules or as subsequently revised during the life of the project.",
           "items": {
             "$ref": "#/definitions/Tariff"
           }
@@ -19,7 +19,7 @@
         "properties":{
             "id": {
                 "title":"Identifier",
-                "description":"A local identifier for this specific  tariff.",
+                "description":"A local identifier for this specific tariff. This field is used to keep track of revisions of a tariff across multiple OCDS releases.",
                 "type":"string"
             },
 			"title": {
