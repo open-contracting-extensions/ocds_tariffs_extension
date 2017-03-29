@@ -1,11 +1,11 @@
 {
   "definitions": {
-    "Contract": {
+    "Implementation": {
       "properties": {
          "tariffs": {
           "type":"array",
           "title":"Tariffs",
-          "description":"The tariffs set out in the contract documents - or AS AMMENEDED FROM TIME TO TIME.",
+          "description":"The tariffs as set out in the contract schedules or as subsequently revised during the life of the project.",
           "items": {
             "$ref": "#/definitions/Tariff"
           }
@@ -18,12 +18,12 @@
         "description":"An item in a tariff table, setting out a breakdown of the user or government fees payable in relation to each unit of a particular good or services.",
         "properties":{
             "id": {
-                "title":"Identifier",
-                "description":"A local identifier for this specific  tariff.",
+                "title":"Tariff identifier",
+                "description":"A local identifier for this specific tariff. This field is used to keep track of revisions of a tariff across multiple OCDS releases.",
                 "type":"string"
             },
 			"title": {
-				"title": "Title",
+				"title": "Tariff title",
 				"description": "The title of this tariff.",
 				"type": [
 					"string",
@@ -31,15 +31,19 @@
 				]
 			},
             "period":{
+				"title": "Tariff period",
+				"description": "The period to which this tariff applies."
                 "$ref": "#/definitions/Period"
             },
             "value": {
+				"title": "Tariff value",
+				"description": "The price per unit of this tariff."
                 "$ref": "#/definitions/Value"
             },
             "unit":{
                 "type":["object","null"],
-                "title":"Unit",
-                "description":"Unit",
+                "title":"Tariff unit",
+                "description":"The unit against which this tariff is charged.",
                 "properties": {
                     "name": {
                         "type":["string","null"],
@@ -53,11 +57,11 @@
             },
             "dimensions":{
                 "type":"object",
-                "title":"Dimensions",
-                "description":"Used to capturing the different breakdowns in tariff charges"
+                "title":"Tariff dimensions",
+                "description":"Used to capture the different breakdowns in tariff charges. Any number of dimensions can be recorded within this object. Dimensions names should follow the camelCase conventions of OCDS."
             },
             "notes": {
-                "title":"Notes",
+                "title":"Tariff notes",
                 "description":"Any notes on this tariff line item. This may include clarifying information.",
                 "type":["string","null"]
             }
