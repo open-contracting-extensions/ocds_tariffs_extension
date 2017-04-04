@@ -5,7 +5,7 @@
          "tariffs": {
           "type":"array",
           "title":"Tariffs",
-          "description":"The tariffs as set out in the contract schedules or as subsequently revised during the life of the project. Also known as tolls or user charges.
+          "description":"The tariffs as set out in the contract schedules or as subsequently revised during the life of the project. Also known as tolls or user charges.",
           "items": {
             "$ref": "#/definitions/Tariff"
           }
