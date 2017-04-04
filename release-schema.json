@@ -5,67 +5,76 @@
          "tariffs": {
           "type":"array",
           "title":"Tariffs",
-          "description":"The tariffs as set out in the contract schedules or as subsequently revised during the life of the project. Also known as tolls or user charges.",
+          "description":"The tariffs as set out in the contract schedules or as subsequently revised during the life of the project. Also known as tolls or user charges.
           "items": {
             "$ref": "#/definitions/Tariff"
           }
         }
       }
     },
-    "Tariff":{
-        "type":"object",
-        "title":"Tariff",
-        "description":"An item in a tariff table, setting out a breakdown of the user or government fees payable in relation to each unit of a particular good or services.",
-        "properties":{
+    "Tariff": {
+      "type": "object",
+      "title": "Tariff",
+      "description": "An item in a tariff table, setting out a breakdown of the user or government fees payable in relation to each unit of a particular good or services.",
+      "properties": {
+        "id": {
+          "title": "Tariff identifier",
+          "description": "A local identifier for this specific tariff. This field is used to keep track of revisions of a tariff across multiple OCDS releases.",
+          "type": "string"
+        },
+        "title": {
+          "title": "Tariff title",
+          "description": "The title of this tariff.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "period": {
+          "title": "Tariff period",
+          "description": "The period to which this tariff applies.",
+          "$ref": "#/definitions/Period"
+        },
+        "value": {
+          "title": "Tariff value",
+          "description": "The price per unit of this tariff.",
+          "$ref": "#/definitions/Value"
+        },
+        "unit": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Tariff unit",
+          "description": "The unit against which this tariff is charged.",
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Unit name",
+              "description": "The name of the unit that the tariff is charged against. E.g. tonnes,"
+            },
             "id": {
-                "title":"Tariff identifier",
-                "description":"A local identifier for this specific tariff. This field is used to keep track of revisions of a tariff across multiple OCDS releases.",
-                "type":"string"
-            },
-			"title": {
-				"title": "Tariff title",
-				"description": "The title of this tariff.",
-				"type": [
-					"string",
-					"null"
-				]
-			},
-            "period":{
-				"title": "Tariff period",
-				"description": "The period to which this tariff applies."
-                "$ref": "#/definitions/Period"
-            },
-            "value": {
-				"title": "Tariff value",
-				"description": "The price per unit of this tariff."
-                "$ref": "#/definitions/Value"
-            },
-            "unit":{
-                "type":["object","null"],
-                "title":"Tariff unit",
-                "description":"The unit against which this tariff is charged.",
-                "properties": {
-                    "name": {
-                        "type":["string","null"],
-                        "title":"Unit name",
-                        "description":"The name of the unit that the tariff is charged against. E.g. tonnes,"       
-                    },
-                    "id": {
-                        "title":"See https://github.com/open-contracting/standard/issues/366 for information on the proposed unit extension to capture structured unit information"
-                    }
-                }
-            },
-            "dimensions":{
-                "type":"object",
-                "title":"Tariff dimensions",
-                "description":"Used to capture the different breakdowns in tariff charges. Any number of dimensions can be recorded within this object. Dimensions names should follow the camelCase conventions of OCDS."
-            },
-            "notes": {
-                "title":"Tariff notes",
-                "description":"Any notes on this tariff line item. This may include clarifying information.",
-                "type":["string","null"]
+              "title": "See https://github.com/open-contracting/standard/issues/366 for information on the proposed unit extension to capture structured unit information"
             }
+          }
+        },
+        "dimensions": {
+          "type": "object",
+          "title": "Tariff dimensions",
+          "description": "Used to capture the different breakdowns in tariff charges. Any number of dimensions can be recorded within this object. Dimensions names should follow the camelCase conventions of OCDS."
+        },
+        "notes": {
+          "title": "Tariff notes",
+          "description": "Any notes on this tariff line item. This may include clarifying information.",
+          "type": [
+            "string",
+            "null"
+          ]
         }
+      }
     }
   }
 }
