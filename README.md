@@ -1,11 +1,5 @@
 ## Tariffs 
 
-### ToDo
-
-* [X] Update descriptions in schema
-* [ ] Add codelist.csv file once extension mechanism agreed
-
-
 ### Introduction
 Some contracts, particularly Public Private Partnership contracts, include agreements about the user fees to be charged for use of the infrastructure or services the contract relates to.
 
