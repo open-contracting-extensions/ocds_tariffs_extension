@@ -1,1 +1,11 @@
-{"name":"ocds_tariffs_extension","description":"The tariffs extension introduces support for disclosure of structured data on the user fees associated with a public private partnership project."}
+{
+  "name": {
+    "en": "ocds_tariffs_extension"
+  },
+  "description": {
+    "en": "The tariffs extension introduces support for disclosure of structured data on the user fees associated with a public private partnership project."
+  },
+  "documentationUrl": {
+    "en": "https://github.com/open-contracting/ocds_tariffs_extension"
+  }
+}
