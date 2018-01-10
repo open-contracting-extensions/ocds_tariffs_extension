@@ -51,8 +51,11 @@
           ],
           "enum": [
             "government",
-            "user"
-          ]
+            "user",
+            null
+          ],
+          "codelist": "chargePaidBy.csv",
+          "openCodelist": false
         },
         "period": {
           "title": "Tariff period",
@@ -113,7 +116,11 @@
           "type": "object",
           "title": "Tariff dimensions",
           "description": "Used to capture the different breakdowns in tariff charges. Any number of dimensions can be recorded within this object. Dimensions names should follow the camelCase conventions of OCDS.",
-          "patternProperties" : { "^.*" : {"type": "string"}}
+          "patternProperties": {
+            "^.*": {
+              "type": "string"
+            }
+          }
         },
         "notes": {
           "title": "Tariff notes",
