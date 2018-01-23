@@ -19,11 +19,11 @@ It also includes an additional codelist entries for the documentType codelist fo
 
 The tariff model builds upon the metrics extension, allowing an array of tariff items, each with an identifier, title, period, value, units and an arbitrary set of dimensions.
 
-For example, if the toll for a road bridge varies based on (a) the type of vehicle; and (b) the time of day; an implementation of the tariff extension may create new fields for ```dimension/vehicleType``` and ```dimension/timeOfDay```, populating these according to local codelists. In PPP cases, these additional dimensions may mirror those used in the estimated demand and other metrics sections.
+For example, if the toll for a road bridge varies based on (a) the type of vehicle; and (b) the time of day; an implementation of the tariff extension may create new fields for `dimension/vehicleType` and `dimension/timeOfDay`, populating these according to local codelists. In PPP cases, these additional dimensions may mirror those used in the estimated demand and other metrics sections.
 
 ### Worked example
 
-The example below shows a very simply tariff table, without periods or units, but with two dimensions. Tariffs which relate to a particular set of dates could have a ```period``` block. Those which relate to a particular unit (e.g. tonnes) could have this indicated using a ```unit``` block.
+The example below shows a very simply tariff table, without periods or units, but with two dimensions. Tariffs which relate to a particular set of dates could have a `period` block. Those which relate to a particular unit (e.g. tonnes) could have this indicated using a `unit` block.
 
 ```json
 "tariffs": [
