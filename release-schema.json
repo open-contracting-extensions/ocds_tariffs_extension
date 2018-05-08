@@ -28,6 +28,9 @@
       "type": "object",
       "title": "Tariff",
       "description": "An item in a tariff table, setting out a breakdown of the user or government fees payable in relation to each unit of a particular good or services.",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "title": "Tariff identifier",
