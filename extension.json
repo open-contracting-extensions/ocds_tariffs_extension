@@ -8,6 +8,9 @@
   "documentationUrl": {
     "en": "https://github.com/open-contracting/ocds_tariffs_extension"
   },
+  "compatibility": [
+    "1.1"
+  ],
   "codelists": [
     "+documentType.csv",
     "chargePaidBy.csv"
