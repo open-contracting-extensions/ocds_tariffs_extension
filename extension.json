@@ -6,7 +6,7 @@
     "en": "Adds fields to the contract and implementation objects to capture details of the tariffs, tolls and user fees set out in the contract and in use throughout the life of the project."
   },
   "documentationUrl": {
-    "en": "https://github.com/open-contracting/ocds_tariffs_extension"
+    "en": "https://extensions.open-contracting.org/en/extensions/tariffs/"
   },
   "compatibility": [
     "1.1"
