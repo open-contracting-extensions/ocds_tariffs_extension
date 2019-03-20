@@ -35,7 +35,8 @@
         "id": {
           "title": "Tariff identifier",
           "description": "A local identifier for this specific tariff. This field is used to keep track of revisions of a tariff across multiple OCDS releases.",
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "title": {
           "title": "Tariff title",
