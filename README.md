@@ -98,7 +98,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 ### 2019-03-20
 
 * Set `"uniqueItems": true` on array fields, and add `"minLength": 1` on required string fields.
-* Make `Tariff.unit` non-nullable, like `Item/unit`.
+* Make `Tariff.unit` non-nullable, like `Item.unit`.
 * Make `Tariff.dimensions` non-nullable (undo earlier change).
 
 ### 2018-05-08
