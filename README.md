@@ -27,56 +27,58 @@ The example below shows a very simply tariff table, without periods or units, bu
 
 ```json
 {
-  "tariffs": [
-    {
-      "id": "1.0",
-      "title": "Standard Toll",
-      "dimensions": {
-        "vehicleType": "Class 1",
-        "registration": "No registration"
+  "contracts": {
+    "tariffs": [
+      {
+        "id": "1",
+        "title": "Standard Toll",
+        "dimensions": {
+          "vehicleType": "Class 1",
+          "registration": "No registration"
+        },
+        "value": {
+          "amount": "0.0",
+          "currency": "GBP"
+        }
       },
-      "value": {
-        "amount": "0.0",
-        "currency": "GBP"
-      }
-    },
-    {
-      "id": "2.0",
-      "title": "Standard Toll",
-      "dimensions": {
-        "vehicleType": "Class 2",
-        "registration": "No registration"
+      {
+        "id": "2",
+        "title": "Standard Toll",
+        "dimensions": {
+          "vehicleType": "Class 2",
+          "registration": "No registration"
+        },
+        "value": {
+          "amount": "2.0",
+          "currency": "GBP"
+        }
       },
-      "value": {
-        "amount": "2.0",
-        "currency": "GBP"
-      }
-    },
-    {
-      "id": "3.0",
-      "title": "Standard Toll",
-      "dimensions": {
-        "vehicleType": "Class 3",
-        "registration": "No registration"
+      {
+        "id": "3",
+        "title": "Standard Toll",
+        "dimensions": {
+          "vehicleType": "Class 3",
+          "registration": "No registration"
+        },
+        "value": {
+          "amount": "6.0",
+          "currency": "GBP"
+        }
       },
-      "value": {
-        "amount": "6.0",
-        "currency": "GBP"
+      {
+        "id": "4",
+        "title": "Standard Toll",
+        "dimensions": {
+          "vehicleType": "Class 4",
+          "registration": "No registration"
+        },
+        "value": {
+          "amount": "8.0",
+          "currency": "GBP"
+        }
       }
-    },
-    {
-      "id": "4.0",
-      "title": "Standard Toll",
-      "dimensions": {
-        "vehicleType": "Class 4",
-        "registration": "No registration"
-      },
-      "value": {
-        "amount": "8.0",
-        "currency": "GBP"
-      }
-    }
-  ]
+    ]
+  }
 }
 ```
 
