@@ -21,7 +21,7 @@ The tariff model builds upon the metrics extension, allowing an array of tariff 
 
 For example, if the toll for a road bridge varies based on (a) the type of vehicle; and (b) the time of day; an implementation of the tariff extension may create new fields for `dimensions.vehicleType` and `dimensions.timeOfDay`, populating these according to local codelists. In PPP cases, these additional dimensions may mirror those used in the estimated demand and other metrics sections.
 
-### Worked example
+## Example
 
 The example below shows a very simply tariff table, without periods or units, but with two dimensions. Tariffs which relate to a particular set of dates could have a `period` block. Those which relate to a particular unit (e.g. tonnes) could have this indicated using a `unit` block.
 
