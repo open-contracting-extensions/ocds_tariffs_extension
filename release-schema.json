@@ -9,7 +9,8 @@
           "items": {
             "$ref": "#/definitions/Tariff"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       }
     },
@@ -22,7 +23,8 @@
           "items": {
             "$ref": "#/definitions/Tariff"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       }
     },
@@ -46,7 +48,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "paidBy": {
           "title": "Paid by",
@@ -84,7 +87,8 @@
                 "null"
               ],
               "title": "Unit name",
-              "description": "The name of the unit that the tariff is charged against. E.g. tonnes,"
+              "description": "The name of the unit that the tariff is charged against. E.g. tonnes,",
+              "minLength": 1
             },
             "scheme": {
               "title": "Scheme",
@@ -94,7 +98,8 @@
                 "null"
               ],
               "codelist": "unitClassificationScheme.csv",
-              "openCodelist": true
+              "openCodelist": true,
+              "minLength": 1
             },
             "id": {
               "title": "ID",
@@ -102,7 +107,8 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             },
             "uri": {
               "title": "URI",
@@ -113,7 +119,8 @@
               ],
               "format": "uri"
             }
-          }
+          },
+          "minProperties": 1
         },
         "dimensions": {
           "type": "object",
@@ -124,9 +131,11 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             }
-          }
+          },
+          "minProperties": 1
         },
         "notes": {
           "title": "Tariff notes",
@@ -134,9 +143,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     }
   }
 }
