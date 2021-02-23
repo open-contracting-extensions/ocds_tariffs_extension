@@ -8,12 +8,7 @@ For example, a Public Private Partnership project to build a bridge may set out 
 
 The tariff extension allows a structured list of these charges to be set out.
 
-You can also find entries in the standard [documentType codelist](https://standard.open-contracting.org/latest/en/schema/codelists/#document-type) for:
-
-* tariffs
-* tariffMethod
-* tariffReview
-* tariffIllustration
+You can also find entries related to tariffs in the standard [documentType codelist](https://standard.open-contracting.org/latest/en/schema/codelists/#document-type).
 
 ## Tariff modelling
 
