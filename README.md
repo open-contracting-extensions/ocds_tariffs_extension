@@ -8,8 +8,6 @@ For example, a Public Private Partnership project to build a bridge may set out 
 
 The tariff extension allows a structured list of these charges to be set out.
 
-You can also find entries related to tariffs in the standard [documentType codelist](https://standard.open-contracting.org/latest/en/schema/codelists/#document-type).
-
 ## Tariff modelling
 
 The tariff model builds upon the metrics extension, allowing an array of tariff items, each with an identifier, title, period, value, units and an arbitrary set of dimensions.
