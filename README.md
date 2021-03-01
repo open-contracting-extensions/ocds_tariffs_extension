@@ -8,13 +8,6 @@ For example, a Public Private Partnership project to build a bridge may set out 
 
 The tariff extension allows a structured list of these charges to be set out.
 
-It also includes an additional codelist entries for the documentType codelist for:
-
-* tariffs
-* tariffMethod
-* tariffReview
-* tariffIllustration
-
 ## Tariff modelling
 
 The tariff model builds upon the metrics extension, allowing an array of tariff items, each with an identifier, title, period, value, units and an arbitrary set of dimensions.
@@ -86,20 +79,22 @@ The example below shows a very simply tariff table, without periods or units, bu
 }
 ```
 
-## Codelist entries
+## Versions
 
-The following document types are introduced by the tariff extension
+Use the following extension URL for different versions of OCDS:
 
-* tariffs - For providing tariff and pricing schedules.
-* tariffMethod - For summarizing the method by which tariffs are set, and linking to detailed documentation of the methods for setting tariffs. This may include written documentation, and spreadsheets providing the models used to calculate tariffs.
-* tariffReview - For summarizing the arrangements for the review and regulation of tariffs, and linking to detailed documentation that covers how tariffs are regulated. This is important to explain to users why they are paying what they are paying, and the scope for changes to payment structures.
-* tariffIllustration - For linking to graphs and reports on the change over time in tariff prices. Use the relevant image media type when linking to PNG, JPEG or GIF graphs to allow applications to directly display this content.
+* 1.2: https://raw.githubusercontent.com/open-contracting-extensions/ocds_tariffs_extension/1.2/extension.json
+* 1.1: https://raw.githubusercontent.com/open-contracting-extensions/ocds_tariffs_extension/1.1/extension.json
 
 ## Issues
 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### 2021-02-15
+
+* [#1157](https://github.com/open-contracting/standard/issues/1157) Move the codes of the +documentType.csv codelist to the standard
 
 ### 2020-06-04
 
