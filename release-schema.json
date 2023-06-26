@@ -3,9 +3,9 @@
     "Implementation": {
       "properties": {
         "tariffs": {
-          "type": "array",
           "title": "Tariffs",
           "description": "The tariffs as they apply during the life of the project. Also known as tolls or user charges. These may be initially copied from the contract section, and then updated with any revisions over the lifetime of the implementation phase. ",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/Tariff"
           },
@@ -17,9 +17,9 @@
     "Contract": {
       "properties": {
         "tariffs": {
-          "type": "array",
           "title": "Tariffs",
           "description": "The tariffs as set out in the contract schedules. Also known as tolls or user charges. Updates to tariffs over the operation of the contract can be provided in the implementation section.",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/Tariff"
           },
@@ -29,9 +29,9 @@
       }
     },
     "Tariff": {
-      "type": "object",
       "title": "Tariff",
       "description": "An item in a tariff table, setting out a breakdown of the user or government fees payable in relation to each unit of a particular good or services.",
+      "type": "object",
       "required": [
         "id"
       ],
@@ -77,17 +77,17 @@
           "$ref": "#/definitions/Value"
         },
         "unit": {
-          "type": "object",
           "title": "Tariff unit",
           "description": "The unit against which this tariff is charged.",
+          "type": "object",
           "properties": {
             "name": {
+              "title": "Unit name",
+              "description": "The name of the unit that the tariff is charged against. E.g. tonnes,",
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Unit name",
-              "description": "The name of the unit that the tariff is charged against. E.g. tonnes,",
               "minLength": 1
             },
             "scheme": {
@@ -123,9 +123,9 @@
           "minProperties": 1
         },
         "dimensions": {
-          "type": "object",
           "title": "Tariff dimensions",
           "description": "Used to capture the different breakdowns in tariff charges. Any number of dimensions can be recorded within this object. Dimensions names should follow the camelCase conventions of OCDS.",
+          "type": "object",
           "patternProperties": {
             "^.*": {
               "type": [
