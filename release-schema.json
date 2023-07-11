@@ -58,13 +58,13 @@
             "string",
             "null"
           ],
+          "codelist": "chargePaidBy.csv",
+          "openCodelist": false,
           "enum": [
             "government",
             "user",
             null
-          ],
-          "codelist": "chargePaidBy.csv",
-          "openCodelist": false
+          ]
         },
         "period": {
           "title": "Tariff period",
