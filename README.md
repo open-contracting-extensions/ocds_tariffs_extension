@@ -121,7 +121,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### 2018-05-08
 
-* Make `Tariff.id` required to support revision tracking and [list merging](http://standard.open-contracting.org/latest/en/schema/merging/#lists)
+* Make `Tariff.id` required to support revision tracking and [list merging](https://standard.open-contracting.org/latest/en/schema/merging/#array-values)
 
 ### 2018-05-01
 
