@@ -92,6 +92,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### Unreleased
+
+* Change `Tariff.unit` to reference `Unit` definition in OCDS 1.2.
+
 ### 2021-02-15
 
 * [#1157](https://github.com/open-contracting/standard/issues/1157) Move the codes from the +documentType.csv codelist to the standard.

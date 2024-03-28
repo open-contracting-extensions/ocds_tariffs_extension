@@ -79,48 +79,7 @@
         "unit": {
           "title": "Unit",
           "description": "The unit against which this tariff is charged.",
-          "type": "object",
-          "properties": {
-            "name": {
-              "title": "Unit name",
-              "description": "The name of the unit that the tariff is charged against. E.g. tonnes,",
-              "type": [
-                "string",
-                "null"
-              ],
-              "minLength": 1
-            },
-            "scheme": {
-              "title": "Scheme",
-              "description": "The list from which units of measure identifiers are taken. Use of the scheme 'UNCEFACT' for the UN/CEFACT Recommendation 20 list of \"Codes for Units of Measure Used in International Trade\" is recommended.",
-              "type": [
-                "string",
-                "null"
-              ],
-              "codelist": "unitClassificationScheme.csv",
-              "openCodelist": true,
-              "minLength": 1
-            },
-            "id": {
-              "title": "ID",
-              "description": "The identifier from the codelist referenced by the scheme field. For example, with UNCEFACT, this is the value of the 'Common Code' column. From this identifier, applications can look-up the human readable name or symbol for this unit of measure. ",
-              "type": [
-                "string",
-                "null"
-              ],
-              "minLength": 1
-            },
-            "uri": {
-              "title": "URI",
-              "description": "If the scheme used provide a machine-readable URI for this unit of measure, this can be given.",
-              "type": [
-                "string",
-                "null"
-              ],
-              "format": "uri"
-            }
-          },
-          "minProperties": 1
+          "$ref": "#/definitions/Unit"
         },
         "dimensions": {
           "title": "Dimensions",
