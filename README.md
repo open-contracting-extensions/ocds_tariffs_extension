@@ -103,7 +103,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### 2021-04-19
 
-* Add Section column to `+documentType.csv` codelist.
+* Add Section column to the `+documentType.csv` codelist patch.
 
 ### 2020-06-04
 
