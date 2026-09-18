@@ -102,7 +102,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### 2020-06-04
 
-* Review normative and non-normative words
+* Review normative and non-normative words.
 
 ### 2020-04-24
 
